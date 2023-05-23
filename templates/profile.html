@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        h1{
+            font-family: 'Quantico', sans-serif;
+        }
+        p{
+            font-family: 'Saira Stencil One', cursive;
+        }
+        a {
+            color: black;
+        }
+        a:hover {
+            text-decoration: none;
+            background-color: lightgreen;
+            font-size: 150%;
+            background: #66ff66;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Profile</h1>
+        <ul>
+            <li><a href="/"><i class="fa fa-home"> Home</i></a></li>
+            <li><a href="#"><i class="fa fa-adjust"> About</i></a></li>
+            <li><a href="https://www.basketballnews.com/"><i class="fa fa-newspaper-o"> News</i></a></li>
+        </ul>
+
+      <div class="profile" style="background-color: bisque;">
+        <p><a href="https://en.wikipedia.org/wiki/Michael_Jordan"> Name: {{ user.name }}</a></p>
+        <p><a href="https://www.nike.com/jordan"> Lastname: {{ user.lastname }}</a></p>
+      </div>
+      <div class="profile" style="background-color: red;">
+        <p><a href="https://en.wikipedia.org/wiki/Shaquille_O%27Neal"> Name: {{ user.name2 }}</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/Shaquille_O%27Neal#Filmography"> Lastname: {{ user.lastname2 }}</a></p>
+      </div>
+      <div class="profile" style="background-color: blue;">
+        <p><a href="https://en.wikipedia.org/wiki/LeBron_James"> Name: {{ user.name3 }}</a></p>
+        <p><a href="https://en.wikipedia.org/wiki/LeBron_James#Filmography"> Lastname: {{ user.lastname3 }}</a></p>
+      </div>
+</body>
+</html>
